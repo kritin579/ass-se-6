@@ -1,0 +1,7 @@
+# ✅ First, define the function
+def quadratic_weather_model(hour):
+    # Simple quadratic temperature model:
+    # - highest at 12 hrs (30°C)
+    # - cooler at night/morning
+    temp = -0.1 * (hour - 12) ** 2 + 30
+    return round(temp, 2)
